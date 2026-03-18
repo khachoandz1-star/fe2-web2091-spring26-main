@@ -1,11 +1,39 @@
 {
   "stories": [
     {
-      "title": "truyện ma",
-      "author": "fefefe",
-      "image": "https://cdn-media.sforum.vn/storage/app/media/ctv_seo10/truyen-cuoi-ngan-thumbnail.jpg",
-      "description": "ngon",
-      "id": 1
+      "title": "truyện 2",
+      "author": "hoàn",
+      "image": "https://m.yodycdn.com/blog/anh-dai-dien-hai-yodyvn3-b3a8cf32-e08a-47fc-a741-71626aadc4de.jpg",
+      "description": "haha",
+      "id": 3
+    },
+    {
+      "title": "truyện 3",
+      "author": "hoàn",
+      "image": "https://m.yodycdn.com/blog/anh-dai-dien-hai-yodyvn3-b3a8cf32-e08a-47fc-a741-71626aadc4de.jpg",
+      "description": "haha",
+      "id": 4
+    },
+    {
+      "title": "truyện 4",
+      "author": "hoàn",
+      "image": "https://m.yodycdn.com/blog/anh-dai-dien-hai-yodyvn3-b3a8cf32-e08a-47fc-a741-71626aadc4de.jpg",
+      "description": "haha",
+      "id": 5
+    },
+    {
+      "title": "truyện 5",
+      "author": "hoàn",
+      "image": "https://m.yodycdn.com/blog/anh-dai-dien-hai-yodyvn3-b3a8cf32-e08a-47fc-a741-71626aadc4de.jpg",
+      "description": "haha",
+      "id": 6
+    },
+    {
+      "title": "truyện 6",
+      "author": "hoàn",
+      "image": "https://m.yodycdn.com/blog/anh-dai-dien-hai-yodyvn3-b3a8cf32-e08a-47fc-a741-71626aadc4de.jpg",
+      "description": "haha",
+      "id": 7
     }
   ],
   "categories": [
