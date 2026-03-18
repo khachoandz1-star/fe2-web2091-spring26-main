@@ -1,4 +1,18 @@
 {
-  "products": [],
+  "stories": [
+    {
+      "title": "truyện ma",
+      "author": "fefefe",
+      "image": "https://cdn-media.sforum.vn/storage/app/media/ctv_seo10/truyen-cuoi-ngan-thumbnail.jpg",
+      "description": "ngon",
+      "id": 1
+    }
+  ],
+  "categories": [
+    {
+      "name": "truyện tiếu lâm",
+      "id": 1
+    }
+  ],
   "users": []
 }
