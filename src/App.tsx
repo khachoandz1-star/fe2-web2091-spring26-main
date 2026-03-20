@@ -5,6 +5,7 @@ import Lab2 from "./pages/lab2";
 import Lab3 from "./pages/lab3";
 import StoryForm from "./pages/lab4";
 import StoryList from "./pages/lab5";
+import EditStory from "./pages/lab6";
 
 
 function App() {
@@ -50,7 +51,8 @@ function App() {
       <Route path="/lab2" element={<Lab2/>}/>
       <Route path="/lab3" element={<Lab3/>}/>
       <Route path="/lab4" element={<StoryForm/>}/>
-       <Route path="/lab5" element={<StoryList/>}/>
+      <Route path="/lab5" element={<StoryList/>}/>
+      <Route path="/edit/:id" element={<EditStory/>}/>
       
       
       </Routes>

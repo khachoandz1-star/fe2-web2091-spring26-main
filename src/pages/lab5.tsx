@@ -1,11 +1,13 @@
 import { Table, Image, Spin } from "antd";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const StoryList = ()=>{
+    const navigate = useNavigate();
     const {data,isLoading,isError}= useQuery({
         queryKey:["stories"],
         queryFn:async()=>{
@@ -52,7 +54,11 @@ const StoryList = ()=>{
     {
         title:"Action",
         render:( _:any, record:any)=>(
-            <button onClick={()=> handleDelete(record.id)}>Xóa</button>
+            <div>
+                 <button onClick={()=> handleDelete(record.id)}>Xóa</button>
+                 <button onClick={()=>navigate(`/edit/${record.id}`)}>Sửa</button>
+            </div>
+           
         )
     }
 ]
