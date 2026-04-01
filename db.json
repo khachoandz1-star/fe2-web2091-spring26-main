@@ -42,5 +42,17 @@
       "id": 1
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$3cvf5QEZ67nFSzYpYScBiOcyghM9w/Y.2HoZs/9ZJC6qccHPv62Cq",
+      "id": 1
+    },
+    {
+      "email": "khachoandz1@gmail.com",
+      "password": "$2a$10$h0RMhiKywKK35hwYRB49gewwH2p0WkpBkVA.irs8QBD10EVrpBg9a",
+      "username": "khachoandz",
+      "id": 2
+    }
+  ]
 }

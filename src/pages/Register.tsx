@@ -2,39 +2,48 @@ import { Form, Input, Button, message } from "antd";
 import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useAuthStore } from "../stores/useAuthStore";
+const Register = () => {
+    const setUser = useAuthStore((state)=>state.setUser);
 
-const Login = () => {
-  const setUser = useAuthStore((state) => state.setUser);
-
-  const { mutate, isPending } = useMutation({
-    mutationFn: async (values: any) => {
-      return await axios.post("http://localhost:3000/login", values);
+    const {mutate,isPending}=useMutation({
+         mutationFn: async (values: any) => {
+      return await axios.post("http://localhost:3000/register", values);
     },
-
     onSuccess: ({ data }) => {
+      // 👇 
       setUser({
         user: data.user,
-        token: data.accessToken,
+        token: null, // 
       });
-
-      message.success("Đăng nhập thành công!");
+     
+      
+      message.success("Đăng ký thành công!");
     },
 
     onError: () => {
-      message.error("Sai email hoặc password!");
+      message.error("Đăng ký thất bại!");
     },
-  });
+    })
+    const onFinish = (values: any) => {
+       mutate(values);
+     
+    };
 
-  const onFinish = (values: any) => {
-    mutate(values);
-  };
 
-  return (
+return(
     <Form
       layout="vertical"
       onFinish={onFinish}
       style={{ maxWidth: 400, margin: "50px auto" }}
     >
+      <Form.Item
+        label="Username"
+        name="username"
+        rules={[{ required: true, message: "Nhập username!" }]}
+      >
+        <Input />
+      </Form.Item>
+
       <Form.Item
         label="Email"
         name="email"
@@ -53,11 +62,12 @@ const Login = () => {
 
       <Form.Item>
         <Button type="primary" htmlType="submit" loading={isPending} block>
-          Đăng nhập
+          Đăng ký
         </Button>
       </Form.Item>
     </Form>
-  );
-};
+)
+}
 
-export default Login;
+
+export default Register;

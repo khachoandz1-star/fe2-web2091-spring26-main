@@ -8,6 +8,7 @@ import StoryList from "./pages/lab5";
 import EditStory from "./pages/lab6";
 import Login from "./pages/Login";
 import Header from "./components/Header";
+import Register from "./pages/Register";
 
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
             <Link to="/login" className="hover:text-gray-200">
               Đăng nhập
             </Link>
-            <Link to="#" className="hover:text-gray-200">
+            <Link to="/register" className="hover:text-gray-200">
               Đăng ký
             </Link>
           </div>
@@ -59,6 +60,7 @@ function App() {
       <Route path="/lab5" element={<StoryList/>}/>
       <Route path="/edit/:id" element={<EditStory/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/register" element={<Register/>}/>
       
       
       </Routes>
