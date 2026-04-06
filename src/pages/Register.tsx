@@ -3,17 +3,17 @@ import { useMutation } from "@tanstack/react-query";
 import axios from "axios";
 import { useAuthStore } from "../stores/useAuthStore";
 const Register = () => {
-    const setUser = useAuthStore((state)=>state.setUser);
 
+    const { setUser } = useAuthStore();
     const {mutate,isPending}=useMutation({
          mutationFn: async (values: any) => {
       return await axios.post("http://localhost:3000/register", values);
     },
     onSuccess: ({ data }) => {
-      // 👇 
+      
       setUser({
         user: data.user,
-        token: null, // 
+        token: null, 
       });
      
       
